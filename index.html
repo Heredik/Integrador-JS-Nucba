@@ -6,12 +6,610 @@
     <link rel="stylesheet" href="src/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__items">
+          <div class="side__menu">
+            <button class="menu">
+              <img
+                src="src/icons/menu_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="menu"
+              />
+            </button>
+          </div>
+          <div class="menu__search">
+            <input type="text" class="search" placeholder="Buscar..." />
+            <button class="btn-search">
+              <img
+                src="src/icons/search_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="search"
+              />
+            </button>
+          </div>
+        </div>
+        <nav class="nav__container">
+          <ul class="nav__content">
+            <li class="content__links">Economía</li>
+            <li class="content__links">Sociedad</li>
+            <li class="content__links">Deportes</li>
+            <li class="content__links">Videojuegos</li>
+            <li class="content__links">Tecnología</li>
+            <li class="content__links">Anime</li>
+            <li class="content__links">Política</li>
+            <li class="content__links">Dolar Blue</li>
+          </ul>
+          <ul class="nav__extra">
+            <button
+              class="nav-btn__login"
+              style="--color: #69db3a; --slant: 0.7rem; --border: 2px"
+            >
+              Iniciar sesión
+            </button>
+            <button class="nav-btn__register">Registrarse</button>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main></main>
+    <main class="main__container" id="main__container">
+      <section class="hero" id="slidershow">
+        <div class="container__slider">
+          <div class="slider" id="slider">
+            <div class="slider__section">
+              <div class="slider__content">
+                <h2>Anime</h2>
+
+                <div class="context__text">
+                  <p>"Vagabond" Un rey caído en el olvido.</p>
+                </div>
+              </div>
+              <img src="src/images/img6.png" alt="" class="slider__img" />
+            </div>
+
+            <div class="slider__section">
+              <div class="slider__content">
+                <h2>Musíca</h2>
+                <div class="context__text">
+                  <p>Taylor Swift vendrá a la Argentina.</p>
+                </div>
+              </div>
+              <img src="src/images/img2.png" alt="" class="slider__img" />
+            </div>
+
+            <div class="slider__section">
+              <div class="slider__content">
+                <h2>Política</h2>
+                <div class="context__text">
+                  <p>Javier Milei y su propuesta de dolarización.</p>
+                </div>
+              </div>
+              <img src="src/images/img3.png" alt="" class="slider__img" />
+            </div>
+
+            <div class="slider__section">
+              <div class="slider__content">
+                <h2>Tecnología</h2>
+                <div class="context__text">
+                  <p>
+                    Nvidia se dispara un 24% en bolsa gracias al impulso de la
+                    inteligencia artificial.
+                  </p>
+                </div>
+              </div>
+              <img src="src/images/img4.png" alt="" class="slider__img" />
+            </div>
+
+            <div class="slider__section">
+              <div class="slider__content">
+                <h2>Videojuegos</h2>
+                <div class="content__text">
+                  <p>
+                    ¿Latinoamérica? Valve espera llevar Steam Deck a más
+                    regiones antes de 2023.
+                  </p>
+                </div>
+              </div>
+              <img src="src/images/img5.jpg" alt="" class="slider__img" />
+            </div>
+
+            <div class="slider__section">
+              <div class="slider__content">
+                <h2>Deporte</h2>
+                <div class="content__text">
+                  <p>
+                    Entrenador del PSG confirma que Lionel Messi dejará el PSG
+                    al final de la temporada.
+                  </p>
+                </div>
+              </div>
+              <img src="src/images/img1.jpg" alt="" class="slider__img" />
+            </div>
+          </div>
+
+          <div class="slider__btn slider__btn--right" id="btn-right">
+            <button>
+              <img
+                src="src/icons/arrow_forward_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="arrowR"
+              />
+            </button>
+          </div>
+          <div class="slider__btn slider__btn--left" id="btn-left">
+            <button>
+              <img
+                src="src/icons/arrow_back_FILL0_wght400_GRAD0_opsz48.svg"
+                alt="arrowL"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="hero__card">
+        <div class="card__container">
+          <div class="card__template">
+            <div class="card__image">
+              <img src="src/images/neymar-jr_862x485.png" alt="" class="" />
+            </div>
+            <div class="card__date">
+              <span class="span__date">5/6/2023</span>
+            </div>
+            <div class="card__title">
+              El proximo destino de Neymar Jr. para la siguiente temporada sera
+              la ¿Premier League?
+            </div>
+          </div>
+          <div class="card__template">
+            <div class="card__image">
+              <img
+                src="src/images/107195139-16764820942023-02-15t172517z_782088734_rc2tbz9o904n_rtrmadp_0_britain-politics-sunak-gates.jpeg"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="card__date">
+              <span class="span__date">4/5/2023</span>
+            </div>
+            <div class="card__title">
+              Bill Gates pronosticó un nuevo virus y pandemia para 2025: qué es
+              el SEERS
+            </div>
+          </div>
+          <div class="card__template">
+            <div class="card__image">
+              <img
+                src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png"
+                alt=""
+                class=""
+              />
+            </div>
+            <div class="card__date">
+              <span class="span__date">6/5/2023</span>
+            </div>
+            <div class="card__title">
+              Alberto Fernández: "No nos enriquecimos ni entregamos obras"
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news__subscribe">
+        <div class="news__subscribe--container">
+          <div class="subscribe__img">
+            <img
+              src="src/images/kisspng-newspaper-journalism-reading-writing-newspapers-in-australia-5b2f0c77b9fd70.9076653615298100397618.png"
+              alt=""
+              class="subscribe__img--news"
+            />
+          </div>
+          <div class="subscribe__info">
+            <div class="subscribe__info--title">
+              <h1>Lorem ipsun Subscripción</h1>
+            </div>
+            <div class="subscribe__info--info">
+              <span
+                >Subscribete a nuestro periodico online para ser el primero en
+                enterarte de los eventos del mundo</span
+              >
+              <ul>
+                <li>Una subscripción para 3 miembros de la familia</li>
+                <li>Acceso ilimitado a Ipsun lorem</li>
+                <li>
+                  Acceso a contenido exclusivo para miembros de Lorem Ipsun
+                </li>
+              </ul>
+            </div>
+            <div class="subscribe__info--price">
+              <span>1000$ / por mes</span>
+            </div>
+          </div>
+        </div>
+        <div class="container__btn--subscribe">
+          <button class="subscribe__btn">COMPRAR MEMBRESÍA</button>
+        </div>
+      </section>
+
+      <section class="news__deport">
+        
+        <div class="news__title">
+          <h2>Deportes</h2>
+        </div>
+        <div class="all__container">
+
+          <div class="deport__container">
+
+            
+
+            <div class="container__top">
+              <div class="new__style--one ">
+              <img src="src/images/1450130000.png" alt="" class="style__img--one" />
+              
+              <h2 class="new__prime--title">
+                Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
+                dolor sit amet
+              </h2>
+              <div class="new__prime--title"></div>
+            </div>
+            <div class="new__style--two">
+              <div class="style__img--two">
+                <img
+                  src="src/images/JulianAlvarezChampion.png"
+                  alt="JulianAlvarezChampion"
+                  class="deport--img-two"
+                />
+              </div>
+              <div class="new__title">
+                <h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  voluptate
+                </h2>
+              </div>
+            </div>
+
+            </div>
+            <div class="container__bottom">
+                <div class="new__style-three">
+            <div class="style__img--three">
+              <img src="src/images/newells-2023.png" alt="newells" class="style__img-three" />
+            </div>
+            <div class="new__title">
+              <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate
+              </h2>
+            </div>
+          </div>
+          <div class="new__style-three">
+            <div class="style__img--three">
+              <img src="src/images/barca2023.jpg" alt="barca23" class="style__img-three" />
+            </div>
+            <div class="new__title">
+              <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate
+              </h2>
+            </div>
+          </div>
+
+          <div class="new__style--four">
+            <div class="style__img--four">
+              <img
+                src="src/images/napoli.png"
+                alt="napoli"
+                class="img__four"
+              />
+            </div>
+            <div class="new__title">
+              <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate
+              </h2>
+            </div>
+          </div>
+          
+
+            </div>
+
+          
+          
+          
+        </div>
+        <div class="deport__news--side">
+            <div class="side__title">
+              <h2>Resultados del mundial</h2>
+            </div>
+            <div class="side__container-worldcup">
+              <ul class="worldcup__score">
+                <li class="worldcup--ARG">
+                  <img
+                    src="src/icons/Banderas/Flag_of_Argentina.svg"
+                    alt="flag--Argentina"
+                    class="flags--img"
+                  />Argentina
+                </li>
+                <li class="worldcup--score">
+                  3 : 3
+                  <span class="world">(4) - (2)</span>
+                </li>
+                <li class="worldcup--FR">
+                  <img
+                    src="src/icons/Banderas/Flag_of_France_(1794–1815,_1830–1974,_2020–present).svg"
+                    alt="flag--France"
+                    class="flags--img"
+                  />Francia
+                </li>
+              </ul>
+              <ul class="worldcup__score">
+                <li class="worldcup--ARG">
+                  <img
+                    src="src/icons/Banderas/Flag_of_Argentina.svg"
+                    alt="flag--Argentina"
+                    class="flags--img"
+                  />Argentina
+                </li>
+                <li class="worldcup--score">3 : 0</li>
+                <li class="worldcup--CRO">
+                  <img
+                    src="src/icons/Banderas/Flag_of_Croatia.svg"
+                    alt="flag--Croatia"
+                    class="flags--img"
+                  />Croatia
+                </li>
+              </ul>
+  
+              <ul class="worldcup__score">
+                <li class="worldcup--ARG">
+                  <img
+                    src="src/icons/Banderas/Flag_of_Argentina.svg"
+                    alt="flag--Argentina"
+                    class="flags--img"
+                  />Argentina
+                </li>
+                <li class="worldcup--score">
+                  2 : 2
+                  <span class="world">(4) - (3)</span>
+                </li>
+                <li class="worldcup--NED">
+                  <img
+                    src="src/icons/Banderas/Flag_of_the_Netherlands.svg"
+                    alt="flag--Holanda"
+                    class="flags--img"
+                  />Holanda
+                </li>
+              </ul>
+  
+              <ul class="worldcup__score">
+                <li class="worldcup--ARG">
+                  <img
+                    src="src/icons/Banderas/Flag_of_Argentina.svg"
+                    alt="flag--Argentina"
+                    class="flags--img"
+                  />Argentina
+                </li>
+                <li class="worldcup--score">2 : 1</li>
+                <li class="worldcup--AUS">
+                  <img
+                    src="src/icons/Banderas/Flag_of_Australia_(converted).svg"
+                    alt="flag--Australia"
+                    class="flags--img"
+                  />Australia
+                </li>
+              </ul>
+            </div>
+        </div>
+
+      </section>
+
+      <section class="news__economic">
+        <div class="news__title">
+          <h2>Economia</h2>
+        </div>
+        <div class="news__economic--container">
+          <div class="new__style--five">
+            <div class="style__img--five">
+              <img src="src/images/china.png" alt="china">
+            </div>
+            <div class="new__title">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate</h2>
+            </div>
+          </div>
+          <div class="new__style--five">
+            <div class="style__img--five">
+              <img src="src/images/china.png" alt="china">
+            </div>
+            <div class="new__title">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate</h2>
+            </div>
+          </div>
+          <div class="new__style--four">
+            <div class="style__img--four">
+              <img src="src/images/china.png" alt="china">
+            </div>
+            <div class="new__title">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate</h2>
+            </div>
+          </div>
+          <div class="new__style--five">
+            <div class="style__img--five">
+              <img src="src/images/china.png" alt="china">
+            </div>
+            <div class="new__title">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate</h2>
+            </div>
+          </div>
+          <div class="new__style--four">
+            <div class="style__img--four">
+              <img src="src/images/china.png" alt="china">
+            </div>
+            <div class="new__title">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate</h2>
+            </div>
+          </div>
+          <div class="new__style--five">
+            <div class="style__img--five">
+              <img src="src/images/china.png" alt="china">
+            </div>
+            <div class="new__title">
+              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                voluptate</h2>
+            </div>
+          </div>
+      </section>
+
+      <section class="news__society">
+        <div class="new__society--container">
+
+          <div class="news__title">
+            <h2>Sociedad</h2>
+          </div>
+          <div class="news__society--container">
+
+            <div class="container__news--img">
+
+              <div class="new__style--six">
+                <div class="style__img--six">
+                  <img src="src/images/1450130000.png" alt="">
+                </div>
+                <div class="new__title">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                </div>
+              </div>
+
+              <div class="new__style--six">
+                <div class="style__img--six">
+                  <img src="src/images/bcra.png" alt="">
+                </div>
+                <div class="new__title">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                </div>
+
+
+              </div>
+
+              <div class="new__style--six">
+                <div class="style__img--six">
+                  <img src="src/images/bcra.png" alt="">
+                </div>
+                <div class="new__title">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                </div>
+
+
+              </div>
+
+              <div class="new__style--six">
+                <div class="style__img--six">
+                  <img src="src/images/bcra.png" alt="">
+                </div>
+                <div class="new__title">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                </div>
+              </div>
+
+              <div class="new__style--four">
+                <div class="style__img--four">
+                  <img src="src/images/bcra.png" alt="">
+                </div>
+                <div class="new__title">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                </div>
+              </div>
+
+              <div class="new__style--four">
+                <div class="style__img--four">
+                  <img src="src/images/bcra.png" alt="">
+                </div>
+                <div class="new__title">
+                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="container__news--p">
+              
+              <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+              <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+              <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+               <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+               <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+               <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+               <div class="container__p">
+                <p class="p__title">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                </p>
+                <span class="span__date">02/08/2023</span>
+              </div>
+              <div class="linea"></div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="news__games">
+
+      </section>
+
+      <section class="news__tecnology"></section>
+
+      <section class="news__anime"></section>
+      <section class="news__politica"></section>
+
+    </main>
     <footer></footer>
+
+    <script src="src/features/main/main.js"></script>
   </body>
 </html>
