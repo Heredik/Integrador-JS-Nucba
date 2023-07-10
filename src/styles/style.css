@@ -25,6 +25,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -32,105 +33,74 @@ body {
 }
 
 header {
-  display: flex;
-  height: 80px;
-  width: 100%;
   background-color: black;
-}
-
-.header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  height: 80px;
+  padding: 5px 1%;
 }
-.header__items {
+
+header .nav__content {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 40px;
-  gap: 15px;
-}
-.menu {
-  background: black;
-  border: none;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.menu img {
-  width: 30px;
-  height: 30px;
-}
-
-.menu__search {
-  position: relative;
-  height: 30px;
-  width: 230px;
-}
-.menu__search .search {
-  height: 30px;
-  width: 0px;
-  border: 0;
-  transition: width 0.3s ease;
-
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.btn-search {
-  border: 0;
-  cursor: pointer;
-  font-size: 24px;
-  position: absolute;
-  height: 30px;
-  width: 40px;
-  transition: transform 0.3s ease;
-  top: 0;
-  left: 0;
-  background: black;
-}
-
-.search:focus,
-.btn-search:focus {
-  outline: none;
-}
-
-.menu__search.active .search {
-  width: 200px;
-  padding-left: 50px;
-}
-
-.header__items .menu__search button img {
-  width: 27px;
-}
-
-.nav__container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
-}
-
-.nav__content {
-  display: flex;
-  gap: 28px;
   list-style: none;
 }
 
-.nav__extra {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+header .nav__content li {
+  display: inline-block;
+  padding: 0 10px;
 }
+
+.header .nav__content a {
+  color: var(--color-7);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: var(--font-roboto);
+}
+
+.button-container {
+  display: inline-flex;
+}
+
+#menu {
+  background: black;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#menu img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  display: none;
+}
+.logo h2 {
+  color: var(--color-3);
+  font-family: var(--font-fira);
+  font-size: 2rem;
+}
+.logo span {
+  font-family: var(--font-fira);
+  font-size: 2rem;
+  color: var(--color-7);
+}
+
+.btn-container button a {
+  color: var(--color-7);
+  font-size: 1.1rem;
+  font-family: var(--font-mont);
+  font-weight: 400;
+}
+
 .nav-btn__login {
+  margin-right: 10px;
   padding: 10px;
   border: none;
   cursor: pointer;
-  font-size: 19px;
-  font-weight: var(--font-lora);
-  color: var(--color-7);
 
   background: linear-gradient(to bottom left, var(--color-5) 50%, #0000 50.1%)
       top right,
@@ -154,9 +124,6 @@ header {
   padding: 11px;
   border: none;
   cursor: pointer;
-  font-size: 19px;
-
-  color: var(--color-7);
   background: linear-gradient(to bottom left, var(--color-5) 50%, #0000 50.1%)
       top right,
     linear-gradient(to top right, var(--color-5) 50%, #0000 50.1%) bottom left;
@@ -175,17 +142,10 @@ header {
   );
 }
 
-.nav__content .content__links {
-  color: var(--color-7);
-  font-family: var(--font-roboto);
-  font-size: 19px;
-  text-align: center;
-}
-
 /* Main */
 /* Hero */
 .main__container {
-  margin-top: 32px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,17 +254,17 @@ header {
 }
 
 .card__template {
-  width: 390px;
+  width: 350px;
   height: 320px;
 }
 
 .card__image {
-  width: 390px;
+  width: 350px;
   height: 200px;
 }
 .card__image img {
   object-fit: cover;
-  width: 390px;
+  width: 100%;
   height: 100%;
 }
 .card__date {
@@ -419,7 +379,8 @@ header {
 
 /*! Estilos de las diferentes cajas  */
 .new__style--one {
-  width: 760px;
+  max-width: 760px;
+  min-width: 320px;
   height: 500px;
   min-height: 200px;
   position: relative;
@@ -445,9 +406,12 @@ header {
 
 .new__style--two {
   /* height: 530px; */
-  width: 310px;
+  min-width: 260px;
+  max-width: 310px;
 }
 .style__img--two {
+  min-width: 260px;
+  max-width: 310px;
   width: 100%;
   height: 460px;
 }
@@ -459,13 +423,13 @@ header {
 }
 
 .new__style-three {
-  height: 460px;
   width: 320px;
 }
 
 .style__img--three {
-  width: 100%;
+  width: 300px;
   height: 320px;
+  object-fit: cover;
 }
 
 .style__img--three img {
@@ -476,12 +440,14 @@ header {
 
 .new__style--four {
   height: 320px;
-  width: 450px;
+  max-width: 450px;
+  min-width: 280px;
 }
 
 .style__img--four {
   height: 200px;
-  width: 450px;
+  max-width: 450px;
+  min-width: 280px;
 }
 
 .style__img--four img {
@@ -491,12 +457,15 @@ header {
 }
 
 .new__style--five {
-  width: 340px;
-  height: 380px;
+  max-width: 340px;
+  min-width: 290px;
+  height: 420px;
   min-height: 200px;
 }
 .style__img--five {
-  width: 340px;
+  object-fit: cover;
+  max-width: 340px;
+  min-width: 290px;
   height: 300px;
 }
 
@@ -507,7 +476,8 @@ header {
 }
 
 .new__style--six {
-  width: 460px;
+  max-width: 460px;
+  min-width: 300px;
 }
 
 .style__img--six {
@@ -523,9 +493,6 @@ header {
 /*! Estilos de las diferentes cajas  */
 
 .fksej {
-  display: flex;
-  flex-direction: column;
-  max-width: 1400px;
   width: 100%;
   padding-top: 200px;
 }
@@ -545,6 +512,11 @@ header {
 
 .all__container {
   display: flex;
+}
+.news__deport {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
 }
 
 .deport__container {
@@ -650,6 +622,12 @@ header {
 
 /* Section Economia */
 
+.news__economic {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+}
+
 .news__economic--container {
   display: flex;
   justify-content: center;
@@ -660,6 +638,13 @@ header {
   /*  justify-content: space-between; */
 }
 
+/* Section society */
+
+.news__society {
+  display: flex;
+  max-width: 1400px;
+  flex-direction: column;
+}
 .news__society--container {
   display: flex;
   flex-wrap: wrap;
@@ -701,10 +686,30 @@ header {
 .news__p--img {
   width: 100%;
   height: 482px;
-  background-color: red;
+  position: relative;
+}
+.news__p--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.news__p--img h2 {
+  position: absolute;
+  bottom: 0;
+  color: var(--color-7);
+  font-family: var(--font-mont);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 0 20px 10px;
 }
 
-/*! SECTION VIDEOGAMES */
+/*! SECTION GAMES */
+
+.news__games {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+}
 
 .news__games--container {
   width: 100%;
@@ -728,7 +733,7 @@ header {
   object-fit: cover;
 }
 .new__container--title {
-  padding: 10px 30px 0 10px;
+  padding: 10px 0px 0 10px;
   font-size: 1rem;
   font-family: var(--font-mont);
   font-weight: 500;
@@ -737,7 +742,8 @@ header {
 .news__container--side {
   width: 710px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 .new__style--seven {
@@ -746,6 +752,7 @@ header {
 }
 
 .style__img--seven {
+  min-width: 300px;
   width: 710px;
   height: 390px;
   object-fit: contain;
@@ -757,25 +764,32 @@ header {
   height: 100%;
 }
 
-.side__container--news {
-  display: flex;
-  justify-content: space-between;
-}
-
 .new__container--bottom {
   display: flex;
-  padding-top: 50px;
-  gap: 20px;
+  justify-content: space-between;
+  padding: 50px 0 0 0;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.rtjdc {
+  width: 420px;
 }
 
 /* Section news__tecnology  */
+.news__tecnology {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+}
 
 .news__tecnology--container {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 10px 0 10px;
+  padding: 30px 2% 0 2%;
+  flex-wrap: wrap;
 }
 
 .news__tecnology__container--aside--left {
@@ -788,13 +802,13 @@ header {
 
 .dwkadd {
   display: flex;
-  width: 690px;
-  height: 220px;
+  width: 100%;
+  height: 200px;
 }
 
 .ddwdcxcw {
   width: 400px;
-  height: 220px;
+  height: 200px;
 }
 .ddwdcxcw img {
   object-fit: cover;
@@ -803,48 +817,46 @@ header {
 }
 
 .dbk2h {
-  height: 300px;
-  width: 42%;
+  height: 200px;
+}
+
+.dbk2h h2 {
+  padding-top: 15px;
 }
 
 .news__tecnology__container--right {
   width: 580px;
 }
-.new__style--prime {
-  width: 100%;
-}
-
-.style__img--prime {
+.news__tecnology__container--right img {
   width: 580px;
   height: 600px;
-}
-.style__img--prime img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 /*! SECTION ANIME */
 
+.news__anime {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+}
+
 .news__anime--container {
   display: flex;
-  width: 100%;
-  /* justify-content: space-between; */
-  padding: 30px 10px 0 10px;
-  flex-wrap: wrap;
+  padding: 30px 2% 0 2%;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .anime__container-aside {
   display: flex;
   flex-direction: row;
-  width: 370px;
+  width: 25%;
   height: 800px;
   position: relative;
 }
 .anime__container-aside img {
-  width: 100%;
-  height: 100%;
+  min-width: 300px;
   object-fit: cover;
 }
 
@@ -860,27 +872,32 @@ header {
 
 .anime__container--top {
   display: flex;
-  gap: 10px;
-  padding-left: 30px;
-  height: 350px;
+  justify-content: space-evenly;
+  width: 75%;
+  flex-wrap: wrap;
 }
-
+.dd2pryeb {
+  display: none;
+}
 .fffewd {
-  width: 320px;
-}
-
-.anime__container--bottom {
-  display: flex;
-  padding-left: 30px;
-  justify-content: space-between;
+  width: 300px;
 }
 
 .mmdwj {
-  width: 640px;
-  height: 320px;
+  width: 550px;
+}
+.mmdwj img {
+  width: 100%;
+  min-width: 300px;
+  object-fit: cover;
 }
 
 /*! Section Politica  */
+.news__polity {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
 
 .news__politica--container {
   display: flex;
@@ -891,6 +908,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 .kkkwajs {
   width: 660px;
@@ -900,6 +918,7 @@ header {
   justify-content: space-between;
   width: 100%;
   padding-top: 50px;
+  flex-wrap: wrap;
 }
 
 /* Footer */
