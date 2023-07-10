@@ -128,11 +128,18 @@
 }
 
 @media screen and (max-width: 1350px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+  }
   .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -149,7 +156,7 @@
 
   .nav__content {
     padding-top: 2rem;
-    gap: 50px;
+    gap: 35px;
     flex-direction: column;
     align-items: start;
   }
@@ -157,6 +164,16 @@
   .nav__content .content__links a {
     font-size: 1.5rem;
   }
+  .nav__content .button_special {
+    display: block;
+  }
+  .button_special a {
+    color: var(--color-7);
+    font-size: 1.1rem;
+    font-family: var(--font-mont);
+    font-weight: 400;
+  }
+
   .logo {
     display: inline-flex;
     justify-content: center;
@@ -256,6 +273,12 @@
 }
 
 @media screen and (max-width: 1052px) {
+  /* slider */
+  .slider__content {
+    padding: 50px 0 0 80px;
+    width: 80%;
+  }
+
   /* Section deport */
 
   .new__style--one {
@@ -600,6 +623,9 @@
     height: auto;
     padding-bottom: 30px;
   }
+  .news__container--side {
+    width: auto;
+  }
 
   .new__style--seven {
     width: 300px;
@@ -608,5 +634,62 @@
   }
   .style__img--seven {
     width: 300px;
+  }
+
+  /* section Tech */
+
+  .news__tecnology--container {
+    justify-content: center;
+  }
+  .news__tecnology__container--aside--left {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .dwkadd {
+    display: block;
+    width: 280px;
+    height: auto;
+  }
+  .style__img--four {
+    width: 280px;
+  }
+
+  .news__tecnology__container--right {
+    display: block;
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  /* section deport */
+  .container__bottom {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .new__style-three.ddfui3 {
+    display: block;
+    height: auto;
+    width: 280px;
+  }
+  .new__style-three.ddfui3 img {
+    height: 200px;
+  }
+
+  .ll2d2dw {
+    padding: 0;
+  }
+  .new__style--four.ddfui3 {
+    display: block;
+    width: 280px;
+    height: auto;
+  }
+  .new__style--four.ddfui3 img {
+    height: 180px;
   }
 }
