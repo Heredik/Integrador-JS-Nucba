@@ -1,0 +1,397 @@
+@media screen and (max-width: 1400px) {
+  .new__title h2 {
+    font-size: 1rem;
+  }
+  .news__title {
+    margin: 0 1rem;
+  }
+
+  /* Header */
+
+  .nav__content .content__links a {
+    font-size: 18px;
+  }
+  .nav-btn__login {
+    padding: 8px;
+  }
+  .nav-btn__register {
+    padding: 8px;
+  }
+
+  .nav__extra button a {
+    font-size: 17px;
+  }
+
+  /* Section deportes */
+  .deport__container {
+    width: 100%;
+  }
+  .container__top {
+    justify-content: space-around;
+  }
+  .container__bottom {
+    gap: 0;
+    justify-content: space-evenly;
+  }
+
+  .deport__news--side {
+    display: none;
+  }
+
+  /* Section Economy */
+  .news__economic--container {
+    justify-content: space-evenly;
+  }
+
+  /* Section games */
+  .news__games--container {
+    justify-content: space-around;
+  }
+  .new__container {
+    width: 500px;
+  }
+
+  .new__style--seven {
+    width: 600px;
+  }
+  .style__img--seven {
+    width: 600px;
+  }
+  .side__container--news {
+    gap: 10px;
+  }
+  .new__container--bottom {
+    justify-content: space-evenly;
+  }
+
+  /* Society */
+
+  .news__society--container {
+    margin: 0 0.5rem;
+    justify-content: space-evenly;
+    width: initial;
+  }
+  .container__news--img {
+    width: 65%;
+  }
+
+  .new__style--six {
+    width: 320px;
+  }
+
+  .new__style--four {
+    width: 300px;
+  }
+
+  .p__title {
+    font-size: 1rem;
+  }
+
+  /* Section anime */
+
+  .anime__container-aside {
+    width: 300px;
+  }
+
+  .fffewd {
+    width: 300px;
+  }
+  .mmdwj {
+    width: 450px;
+  }
+
+  /* Section polity */
+  .politica__container--top {
+    justify-content: space-around;
+  }
+  .kkkwajs {
+    width: 500px;
+  }
+
+  .politica__container--bottom {
+    justify-content: space-around;
+  }
+
+  /* Footer */
+
+  .footer__container {
+    padding: 100px 40px 0 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .container__network {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 320px;
+    margin-top: 80px;
+    margin-left: -100%;
+    transition: all 0.4s ease-out;
+    z-index: 100;
+    background-color: black;
+  }
+  .nav.show {
+    margin-left: 0;
+  }
+
+  .nav__content {
+    padding-top: 2rem;
+    gap: 50px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .nav__content .content__links a {
+    font-size: 1.5rem;
+  }
+  .logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1266px) {
+  /* Hero card */
+  .card__container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .card__template,
+  .card__image {
+    width: 300px;
+  }
+
+  /* section subscribe */
+  .news__subscribe--container {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .subscribe__img {
+    width: 300px;
+  }
+
+  .subscribe__info {
+    padding-top: 60px;
+  }
+  .subscribe__info--title h1 {
+    padding: 0;
+  }
+
+  .subscribe__info--info {
+    padding: 30px 0 30px 0;
+  }
+  .subscribe__info--price {
+    padding-top: 25px;
+  }
+  .container__btn--subscribe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe__btn {
+    margin-top: 30px;
+    width: 40%;
+  }
+  /* tecn */
+  .news__tecnology--container {
+    justify-content: space-around;
+  }
+  .news__tecnology__container--aside--left {
+    width: initial;
+    height: initial;
+    gap: 20px;
+  }
+  .dwkadd {
+    display: block;
+    width: 355px;
+    height: initial;
+  }
+  .dbk2h {
+    height: initial;
+  }
+
+  /* Section games */
+
+  .new__container {
+    width: 330px;
+  }
+
+  .dddw,
+  .dddw img {
+    width: 300px;
+  }
+
+  /* anime */
+  .news__anime--container {
+    flex-wrap: nowrap;
+  }
+
+  .new__style-three.llocn {
+    height: 300px;
+  }
+  .style__img--three.mmnbhg {
+    height: 200px;
+  }
+
+  .new__style--two {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  /* Section deport */
+
+  .new__style--one {
+    width: 540px;
+  }
+
+  .new__style-three {
+    width: 300px;
+  }
+
+  /* Section economic */
+
+  .ccww23 {
+    width: 290px;
+    height: auto;
+  }
+
+  .dwlajnda {
+    width: 290px;
+    height: 300px;
+  }
+
+  /* sociedad */
+  .news__society--container {
+    margin: 0;
+    padding: 20px 2rem 0 2rem;
+  }
+  .container__news--img {
+    width: 75%;
+    justify-content: unset;
+  }
+
+  /* section games */
+  .news__games--container {
+    flex-wrap: nowrap;
+  }
+
+  .new__container {
+    width: 300px;
+  }
+
+  .new__style--seven,
+  .style__img--seven {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  /* section subscribe */
+
+  .news__subscribe.ll2d2dw {
+    padding-top: 200px;
+  }
+  /* section deport */
+  .container__bottom {
+    flex-wrap: wrap;
+  }
+
+  .ll2d2dw {
+    padding-top: 40px;
+  }
+
+  /* section sociedad */
+  .container__news--img {
+    width: 100%;
+    justify-content: center;
+  }
+  .new__style--six {
+    height: 400px;
+  }
+  .style__img--six {
+    height: 300px;
+  }
+
+  .container__news--p {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container__p {
+    width: 300px;
+    height: 158px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--color-6);
+  }
+  .linea {
+    display: none;
+  }
+  .news__p--img {
+    display: none;
+  }
+
+  /* section techn*/
+  .news__tecnology--container {
+    padding-right: 2rem;
+    justify-content: start;
+  }
+  .news__tecnology__container--aside--left {
+    width: 80%;
+    padding-bottom: 30px;
+  }
+
+  .dwkadd {
+    display: flex;
+    height: 200px;
+    width: 100%;
+  }
+  .news__tecnology__container--right {
+    width: 80%;
+    height: 200px;
+    display: flex;
+  }
+
+  .news__tecnology__container--right.ll2d2dw {
+    padding: 0;
+  }
+  .news__tecnology__container--right img {
+    width: 280px;
+    height: 200px;
+  }
+  .dddwdlwjan {
+    width: 100%;
+  }
+
+  /* section anime */
+
+  .anime__container-aside {
+    display: none;
+  }
+  .anime__container--top {
+    width: 100%;
+  }
+  .dd2pryeb {
+    display: block;
+  }
+  .mmdwj {
+    width: 300px;
+  }
+}
