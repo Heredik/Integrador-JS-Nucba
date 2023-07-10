@@ -1,14 +1,40 @@
+//Search
+const input = document.querySelector('.input');
+const boton = document.querySelector('.btn');
+const search = document.querySelector('.search');
+
+//Menu
+const menuHamb = document.querySelector('#menu');
+const nav = document.querySelector('.nav')
+function activeMenu() {
+  menuHamb.classList.toggle('close');
+  nav.classList.toggle('show');
+}
+
+//Header scroll
+/* function scrollWindow() {
+  //Header
+  const logoNav = document.querySelector('.nav-logo');
+  const header = document.querySelector('header');
+  const contnav = document.querySelector('.container-logo');
+
+  if (window.scrollY > 80) {
+    header.classList.add('bottom');
+    contnav.classList.add('logoactive');
+    logoNav.classList.add('showlogo');
+  } else if (window.scrollY == 0) {
+    header.classList.remove('bottom');
+    contnav.classList.remove('logoactive');
+    logoNav.classList.remove('showlogo');
+  }
+} */
+
+/* Slider hero */
 const slider = document.querySelector('#slider');
 let sliderSection = document.querySelectorAll('.slider__section');
 let sliderSectionLast = sliderSection[sliderSection.length - 1];
 const btnLeft = document.querySelector('#btn-left');
 const btnRight = document.querySelector('#btn-right');
-
-//Search
-const search = document.querySelector('.search');
-const btnSearch = document.querySelector('.btn-search');
-const menuSearch = document.querySelector('.menu__search');
-
 slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
 function next() {
@@ -33,7 +59,7 @@ function prev() {
     slider.style.marginLeft = '-100%';
   }, 500);
 }
-
+//! ACTIVAR
 /* setInterval(() => {
   next();
 }, 10000); */
@@ -41,10 +67,13 @@ function prev() {
 const init = () => {
   btnRight.addEventListener('click', next);
   btnLeft.addEventListener('click', prev);
-  btnSearch.addEventListener('click', () => {
-    menuSearch.classList.toggle('active');
-    search.focus();
+  boton.addEventListener('click', () => {
+    search.classList.toggle('active');
+    input.focus();
   });
+
+  /* window.addEventListener('scroll', scrollWindow); */
+  menuHamb.addEventListener('click', activeMenu);
 };
 
 init();

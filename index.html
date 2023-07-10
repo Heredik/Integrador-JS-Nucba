@@ -4,59 +4,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/anim.css">
+    <link rel="stylesheet" href="src/styles/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500&family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="index.html">
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="header__items">
-          <div class="side__menu">
-            <button class="menu">
-              <img
-                src="src/icons/menu_FILL0_wght400_GRAD0_opsz48.svg"
-                alt="menu"
-              />
+      <div class="button-container">
+        <button id="menu">
+          <img src="src/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </button>
+        <div class="search">
+            <input type="text" class="input" placeholder="Buscar...">
+            <button class="btn"><img
+                  src="src/icons/search_FILL0_wght400_GRAD0_opsz48.svg"
+                  alt="search"/>
             </button>
-          </div>
-          <div class="menu__search">
-            <input type="text" class="search" placeholder="Buscar..." />
-            <button class="btn-search">
-              <img
-                src="src/icons/search_FILL0_wght400_GRAD0_opsz48.svg"
-                alt="search"
-              />
-            </button>
-          </div>
         </div>
-        <nav class="nav__container">
-          <ul class="nav__content">
-            <li class="content__links">Economía</li>
-            <li class="content__links">Sociedad</li>
-            <li class="content__links">Deportes</li>
-            <li class="content__links">Videojuegos</li>
-            <li class="content__links">Tecnología</li>
-            <li class="content__links">Anime</li>
-            <li class="content__links">Política</li>
-            <li class="content__links">Dolar Blue</li>
-          </ul>
-          <ul class="nav__extra">
-            <button
-              class="nav-btn__login"
-              style="--color: #69db3a; --slant: 0.7rem; --border: 2px"
-            >
-              Iniciar sesión
-            </button>
-            <button class="nav-btn__register">Registrarse</button>
-          </ul>
-        </nav>
       </div>
+      <div class="logo">
+        <h2>Santa</h2>
+        <span> Media</span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__content">
+              <li class="content__links"><a href="#economy">Economía</a></li>
+              <li class="content__links"><a href="#society">Sociedad</a></li> 
+              <li class="content__links"><a href="#deport">Deport</a></li>
+              <li class="content__links"><a href="#games">Videojuegos</a></li>
+              <li class="content__links"><a href="#technology">Tecnología</a></li>
+              <li class="content__links"><a href="#anime">Anime/Manga</a></li>
+              <li class="content__links"><a href="#polity">Política</a></li>
+              <li class="content__links"><a href="#">Dolar blue</a></li>
+            </ul>
+          </li>
+      </nav>
+
+      <div class="btn-container">
+         <button class="nav-btn__login" style="--color: #69db3a; --slant: 0.7rem; --border: 2px">
+            <a href="src/pages/login.html">Iniciar Sesión</a>
+          </button>
+          <button class="nav-btn__register">
+            <a href="src/pages/register.html">Registrate</a>
+          </button>
+      </div>
+
     </header>
     <main class="main__container" id="main__container">
       <section class="hero" id="slidershow">
@@ -65,6 +64,8 @@
             <div class="slider__section">
               <div class="slider__content">
                 <h2>Anime</h2>
+
+
 
                 <div class="context__text">
                   <p>"Vagabond" Un rey caído en el olvido.</p>
@@ -109,7 +110,7 @@
             <div class="slider__section">
               <div class="slider__content">
                 <h2>Videojuegos</h2>
-                <div class="content__text">
+                <div class="content__text ">
                   <p>
                     ¿Latinoamérica? Valve espera llevar Steam Deck a más
                     regiones antes de 2023.
@@ -181,10 +182,10 @@
               el SEERS
             </div>
           </div>
-          <div class="card__template">
+          <div class="card__template ">
             <div class="card__image">
               <img
-                src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png"
+                src="src/images/alberto-fernandez-cadena-nacional-oficial.png"
                 alt=""
                 class=""
               />
@@ -199,7 +200,7 @@
         </div>
       </section>
 
-      <section class="news__subscribe">
+      <section class="news__subscribe ll2d2dw">
         <div class="news__subscribe--container">
           <div class="subscribe__img">
             <img
@@ -235,7 +236,7 @@
         </div>
       </section>
 
-      <section class="news__deport fksej">
+      <section class="news__deport fksej" id="deport">
         
         <div class="news__title">
           <h2>Deportes</h2>
@@ -248,67 +249,60 @@
 
             <div class="container__top">
               <div class="new__style--one ">
-              <img src="src/images/1450130000.png" alt="" class="style__img--one" />
+              <img src="src/images/deport/1450130000.png" alt="ArgentinaCampeon" class="style__img--one" />
               
               <h2 class="new__prime--title">
-                Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum
-                dolor sit amet
+                Argentina se consagra CAMPEON MUNDIAL de Qatar 2022
               </h2>
               <div class="new__prime--title"></div>
             </div>
             <div class="new__style--two">
               <div class="style__img--two">
                 <img
-                  src="src/images/JulianAlvarezChampion.png"
+                  src="src/images/deport/JulianAlvarezChampion.png"
                   alt="JulianAlvarezChampion"
                   class="deport--img-two"
                 />
               </div>
               <div class="new__title">
-                <h2>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  voluptate
+                <span class="span__date">10/06/2023</span>
+                <h2 class="h2-Julian">
+                  
+                  Julián Álvarez se sumó a la lista de los que ganaron Copa Libertadores, Mundial y Champions
                 </h2>
               </div>
             </div>
 
             </div>
             <div class="container__bottom">
-                <div class="new__style-three">
-            <div class="style__img--three">
-              <img src="src/images/newells-2023.png" alt="newells" class="style__img-three" />
-            </div>
+            <div class="new__style-three ddfui3">
+              <img src="src/images/deport/newells-2023.png" alt="newells" class="style__img--three vcved" />
             <div class="new__title">
+              <span class="span__date">08/07/2023</span>
               <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate
+                Newell's, otra vez, juez y VAR en contra
               </h2>
             </div>
           </div>
-          <div class="new__style-three">
-            <div class="style__img--three">
-              <img src="src/images/barca2023.jpg" alt="barca23" class="style__img-three" />
-            </div>
+          <div class="new__style-three ddfui3">
+            <img src="src/images/deport/barca2023.jpg" alt="barca23" class="style__img--three vcved" />
+            
             <div class="new__title">
+              <span class="span__date">15/05/2023</span>
               <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate
+               La Liga: Barcelona es campeón de España tras cuatro años y salva la temporada
               </h2>
             </div>
           </div>
 
-          <div class="new__style--four">
-            <div class="style__img--four">
-              <img
-                src="src/images/napoli.png"
-                alt="napoli"
-                class="img__four"
-              />
+          <div class="new__style--four ll2d2dw ddfui3">
+            <div class="fofo">
+              <img src="src/images/deport/napoli.png"alt="napoli"class="img__four"/>
             </div>
             <div class="new__title">
+              <span class="span__date">05/05/2023</span>
               <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate
+                Napoli se consagró campeón 33 años después del último Scudetto de Maradona
               </h2>
             </div>
           </div>
@@ -406,68 +400,69 @@
 
       </section>
 
-      <section class="news__economic fksej">
+      <section class="news__economic fksej" id="economy">
         <div class="news__title">
           <h2>Economia</h2>
         </div>
         <div class="news__economic--container">
-          <div class="new__style--five">
-            <div class="style__img--five">
-              <img src="src/images/china.png" alt="china">
+          <div class="new__style--five ccww23" >
+            <div class="style__img--five dwlajnda">
+              <img src="src/images/Economy/inflacion.png" alt="inflacion">
             </div>
             <div class="new__title">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate</h2>
+              <span class="span__date">03/04/2023</span>
+              <h2>Como ganarle la guerra a la inflación</h2>
             </div>
           </div>
-          <div class="new__style--five">
-            <div class="style__img--five">
-              <img src="src/images/china.png" alt="china">
+          <div class="new__style--five ccww23">
+            <div class="style__img--five dwlajnda">
+              <img src="src/images/Economy/china.png" alt="china">
             </div>
             <div class="new__title">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate</h2>
+              <span class="span__date">08/07/2023</span>
+              <h2>China profundiza la apertura al capital extranjero</h2>
             </div>
           </div>
-          <div class="new__style--four">
-            <div class="style__img--four">
-              <img src="src/images/china.png" alt="china">
+          <div class="new__style--five ccww23">
+            <div class="style__img--five dwlajnda">
+              <img src="src/images/Economy/fmi.png" alt="massaFMI">
             </div>
-            <div class="new__title">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate</h2>
-            </div>
-          </div>
-          <div class="new__style--five">
-            <div class="style__img--five">
-              <img src="src/images/china.png" alt="china">
-            </div>
-            <div class="new__title">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate</h2>
+            <div class="new__title fmiudw">
+              <span class="span__date">09/07/2023</span>
+              <h2>La disputa entre Massa, el FMI y la oposición es quién se hará cargo de la próxima devaluación
+              </h2>
             </div>
           </div>
-          <div class="new__style--four">
-            <div class="style__img--four">
-              <img src="src/images/china.png" alt="china">
+          <div class="new__style--five ccww23">
+            <div class="style__img--five dwlajnda">
+              <img src="src/images/Economy/images.png" alt="qatar">
             </div>
             <div class="new__title">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate</h2>
+              <span class="span__date">09/07/2023</span>
+              <h2>Se estancó la Economia de Qatar luego del Mundial de Fútbol</h2>
             </div>
           </div>
-          <div class="new__style--five">
-            <div class="style__img--five">
-              <img src="src/images/china.png" alt="china">
+          <div class="new__style--five ccww23">
+            <div class="style__img--five dwlajnda">
+              <img src="src/images/Economy/buenosaires-inflacion.png" alt="inflacion-BuenosAires">
             </div>
-            <div class="new__title">
-              <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                voluptate</h2>
+            <div class="new__title fmiudw">
+              <span class="span__date">07/07/2023</span>
+              <h2>Inflación en la Ciudad de Buenos Aires: fue del 7,1% en junio y muestra una leve baja por segundo mes consecutivo</h2>
+            </div>
+          </div>
+          <div class="new__style--five ccww23">
+            <div class="style__img--five dwlajnda">
+              <img src="src/images/Economy/industrial-software1.png" alt="industrial-software">
+            </div>
+            <div class="new__title fmiudw">
+              <span class="span__date">08/07/2023</span>
+              <h2>La industria del software se prepara para dar otro salto a pesar de la crisis y el cepo</h2>
             </div>
           </div>
       </section>
 
-      <section class="news__society fksej">
+      <section class="news__society fksej" id="society">
         <div class="new__society--container">
 
           <div class="news__title">
@@ -479,30 +474,21 @@
 
               <div class="new__style--six">
                 <div class="style__img--six">
-                  <img src="src/images/1450130000.png" alt="">
+                  <img src="src/images/Society/CENTRO7.png" alt="ARGENTINACAMPEON">
                 </div>
                 <div class="new__title">
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                  <span class="span__date">20/12/2022</span>
+                  <h2>Más de cinco millones de hinchas salieron a las calles a agradecerle a la Scaloneta por la Copa del Mundo!</h2>
                 </div>
               </div>
 
               <div class="new__style--six">
                 <div class="style__img--six">
-                  <img src="src/images/bcra.png" alt="">
+                  <img src="src/images/Society/argentinauruguay.png" alt="ArgentinaUruguay">
                 </div>
                 <div class="new__title">
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
-                </div>
-
-
-              </div>
-
-              <div class="new__style--six">
-                <div class="style__img--six">
-                  <img src="src/images/bcra.png" alt="">
-                </div>
-                <div class="new__title">
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                  <span class="span__date">08/07/2023</span>
+                  <h2>El Gobierno argentino ofrece a Uruguay una planta potabilizadora de agua ante la crisis hídrica  </h2>
                 </div>
 
 
@@ -510,28 +496,44 @@
 
               <div class="new__style--six">
                 <div class="style__img--six">
-                  <img src="src/images/bcra.png" alt="">
+                  <img src="src/images/Society/slbau_jRq_1256x620__1.png" alt="paroColectivos">
                 </div>
                 <div class="new__title">
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                  <span class="span__date">07/07/2023</span>
+                  <h2>Sin colectivos: un paro que desnuda las incongruencias de un sistema quebrado</h2>
+                </div>
+
+
+              </div>
+
+              <div class="new__style--six">
+                <div class="style__img--six">
+                  <img src="src/images/Society/744090-17a-jorge-20larrosa.jpg" alt="paroSubte">
+                </div>
+                <div class="new__title">
+                  <span class="span__date">06/07/2023</span>
+                  <h2>Nuevo paro de subte para reclamar el retiro de asbesto y la reducción de la jornada labora</h2>
                 </div>
               </div>
 
-              <div class="new__style--four">
-                <div class="style__img--four">
-                  <img src="src/images/bcra.png" alt="">
+              <div class="new__style--four dddkwkdw">
+                <div class="style__img--four four222d">
+                  <img src="src/images/Society/744122-16-p1.jpg" alt="">
                 </div>
                 <div class="new__title">
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                  <span class="span__date">06/07/2023</span>
+                  <h2>Una mujer fue operada para extirparle un riñón canceroso, pero le sacaron el sano</h2>
                 </div>
               </div>
 
-              <div class="new__style--four">
-                <div class="style__img--four">
-                  <img src="src/images/bcra.png" alt="">
+              <div class="new__style--four dddkwkdw">
+                <div class="style__img--four four222d">
+                  <img src="src/images/Society/742482-19-a-telam.png" alt="Aeroparque">
                 </div>
                 <div class="new__title">
-                  <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, perferendis? Accusantium tempora voluptatibus neque voluptas deleniti, quae dicta</h2>
+                  <span class="span__date">01/07/2023</span>
+                  <h2>Desalojan a 160 personas que dormían dentro de Aeroparque
+                  </h2>
                 </div>
               </div>
 
@@ -542,56 +544,56 @@
               
               <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  Tiroteo en Estados Unidos: dos personas murieron y 28 resultaron heridas | Durante una fiesta callejera en Baltimore
                 </p>
-                <span class="span__date">02/08/2023</span>
+                <span class="span__date">02/07/2023</span>
                 <div class="linea"></div>
               </div>
               <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  La magia eterna de las búsquedas del tesoro | Historias y leyendas de botines fabulosos y reliquias culturales
                 </p>
-                <span class="span__date">02/08/2023</span>
+                <span class="span__date">02/07/2023</span>
                 <div class="linea"></div>
               </div>
               <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  Silvina Luna está "despierta" y con "signos vitales estables"
                 </p>
-                <span class="span__date">02/08/2023</span>
+                <span class="span__date">03/07/2023</span>
                 <div class="linea"></div>
               </div>
                <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  Un juez y su custodio mataron a dos asaltantes en un tiroteo | Los abordaron en Quilmes cuando salían en auto de un polígono de tiro
                 </p>
-                <span class="span__date">02/08/2023</span>
+                <span class="span__date">03/07/2023</span>
                 <div class="linea"></div>
               </div>
                <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  Alquileres: cuánto aumentan a partir de julio y las subas que se esperan para agosto | Un nuevo golpe al bolsillo
                 </p>
-                <span class="span__date">02/08/2023</span>
+                <span class="span__date">03/07/2023</span>
                 <div class="linea"></div>
               </div>
                <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                 El 3 de julio fue el día más cálido de la historia | Las mediciones superaron el umbral de los 17 grados promedio
                 </p>
-                <span class="span__date">02/08/2023</span>
+                <span class="span__date">04/07/2023</span>
                 <div class="linea"></div>
               </div>
                <div class="container__p">
                 <p class="p__title">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                  Femicidio de Cecilia: los pasos siguientes de la investigación | La defensa de César Sena apeló la prisión preventiva
                 </p>
-                <span class="span__date">02/08/2023</span>
-                <div class="linea"></div>
+                <span class="span__date">05/07/2023</span>
               </div>
 
               <div class="news__p--img">
-                <div class=""></div>
+                <img src="src/images/Society/741240-fbb9b1e4-8b89-4fb9-986a-de4ecb523dcf_0.png" alt="uba-ranking-100" >
+                <h2> La UBA es la única universidad argentina que está entre las 100 mejores del mundo</h2>
               </div>
 
             </div>
@@ -602,178 +604,182 @@
       </section>
 
 
-      <section class="news__games fksej">
+      <section class="news__games fksej" id="games">
         <div class="news__title">
           <h2>Videogames</h2>
         </div>
         <div class="news__games--container">
           <div class="new__container">
             <div class="news__container--img">
-              <img src="src/images/bloodborne.png" alt="bloodborne" class="container--img">
+              <img src="src/images/games/bloodborne.png" alt="bloodborne" class="container--img">
             </div>
             <div class="new__container--title">
-              <h2 >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus at nam amet minus vitae omnis laborum numquam</h2>
+              <span class="span__date">10/05/2023</span>
+              <h2 >"Está en desarrollo", creador de God of War emociona a fans de Bloodborne</h2>
             </div>
           </div>
           <div class="news__container--side">
-          <div class="new__style--seven">
-            <div class="style__img--seven">
-              <img src="src/images/bloodborne.png" alt="">
+            <div class="new__style--seven">
+              <div class="style__img--seven">
+                <img src="src/images/games/20237410263389_1.png" alt="Valve">
+              </div>
+              <div class="new__title dwdadaddd" >
+                <span class="span__date">04/07/2023</span>
+                <h2>Valve retira de Steam varios videojuegos que utilizan arte generado por IA.</h2>
+              </div>
+            </div>
+            <div class="new__style--five dddw">
+              <img src="src/images/games/take-two_fvsp.png" class="style__img--five" alt="taketwoRemastered">
+            
+            <div class="new__title">
+              <span class="span__date">05/07/2023</span>
+              <h2>Take Two, editora de Rockstar y 2K, confirma que se lanzarán dos remasterizaciones o nuevas versiones en este año fiscal.</h2>
+            </div>
+            </div>
+            <div class="new__style--five dddw">
+              <img src="src/images/games/1366_2000.png" alt="SagaAssassinsCreed" class="style__img--five">
+                <div class="new__title">
+                  <span class="span__date">02/07/2023</span>
+                  <h2>Ubisoft tiene en desarrollo hasta 11 juegos de Assassin's Creed, y hay información de cada uno.</h2>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="new__container--bottom">
+          <div class="new__style-three rtjdc">
+            <div class="style__img--three">
+              <img src="src/images/games/23f1366_2000.png" alt="">
             </div>
             <div class="new__title">
-              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+              <span class="span__date">08/07/2023</span>
+              <h2>Bethesda cuenta que Starfield no sería un juego tan inmenso si no fuera por el "increíble apoyo de Xbox".</h2>
             </div>
           </div>
-          <div class="side__container--news">
-            <div class="new__style--five">
-            <div class="style__img--five">
-              <img src="src/images/bloodborne.png" alt="">
+         <div class="new__style-three rtjdc">
+            <div class="style__img--three">
+              <img src="src/images/games/denuvo.png" alt="Denuvo">
             </div>
             <div class="new__title">
-              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+              <span class="span__date">09/07/2023</span>
+              <h2>"No confían en nosotros". Denuvo no causa problemas de rendimiento en los juegos, o eso es lo que quieren demostrar.</h2>
             </div>
           </div>
-          <div class="new__style--five">
-            <div class="style__img--five">
-              <img src="src/images/bloodborne.png" alt="">
+          <div class="new__style-three rtjdc ll2d2dw">
+            <div class="style__img--three">
+              <img src="src/images/games/ddwj2221366_2000.png" alt="Terraria">
             </div>
             <div class="new__title">
-              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-            </div>
-          </div>
-          </div>
-          </div>
-          <div class="new__container--bottom">
-            <div class="new__style--three">
-              <div class="style__img--three">
-                <img src="src/images/bloodborne.png" alt="">
-              </div>
-              <div class="new__title">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-              </div>
-            </div>
-           <div class="new__style--three">
-              <div class="style__img--three">
-                <img src="src/images/bloodborne.png" alt="">
-              </div>
-              <div class="new__title">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-              </div>
-            </div>
-            <div class="new__style--three">
-              <div class="style__img--three">
-                <img src="src/images/bloodborne.png" alt="">
-              </div>
-              <div class="new__title">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-              </div>
+              <span class="span__date">06/07/2023</span>
+              <h2>Crearon uno de los juegos más exitosos de Steam, pero no todo son buenas noticias. Llevan años intentando abandonarlo y no saben cómo hacerlo.</h2>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="news__tecnology fksej">
+      <section class="news__tecnology" id="technology">
         <div class="news__title">
-          <h2>Tecnology</h2>
+          <h2>Tecnología</h2>
         </div>
         <div class="news__tecnology--container">
           <div class="news__tecnology__container--aside--left">
-            <div class="new__style--four dwkadd">
-              <div class="style__img--four ddwdcxcw">
-                <img src="src/images/Tecno/in-missing titanic submarine.jpg" alt="submarine">
-              </div>
+            <div class="dwkadd">
+              <img src="src/images/Tecnology/shutterstock_1594962205.png" alt="taiwanchips" class="style__img--four">
               <div class="new__title dbk2h">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                <span class="span__date">29/06/2023</span>
+                <h2>Taiwán aumentará el precio de los chips y Estados Unidos ya busca alternativas y nuevas alianzas</h2>
               </div>
             </div>
-            <div class="new__style--four dwkadd">
-              <div class="style__img--four ddwdcxcw">
-                <img src="src/images/Tecno/in-missing titanic submarine.jpg" alt="submarine">
-              </div>
+            <div class="dwkadd">
+              <img src="src/images/Tecnology/136233326_ddw2000.png" alt="GoogleacusaMicrosoft" class="style__img--four">
               <div class="new__title dbk2h">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                <span class="span__date">27/06/2023</span>
+                <h2>Google acusa a Microsoft de monopolio ante Europa y Estados Unidos por su forma de operar en un sector tecnológico clave.</h2>
               </div>
             </div>
-             <div class="new__style--four dwkadd">
-              <div class="style__img--four ddwdcxcw">
-                <img src="src/images/Tecno/in-missing titanic submarine.jpg" alt="submarine">
-              </div>
+             <div class="dwkadd">
+              <img src="src/images/Tecnology/2390981366_20002992382.png" alt="twitterfightingbot"  class="style__img--four">
               <div class="new__title dbk2h">
-                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                <span class="span__date">14/06/2023</span>
+                <h2>Casi un año después, Elon Musk revela que su lucha contra los bots de Twitter es un “imposible” que ha empeorado por culpa de la IA.</h2>
               </div>
             </div>
           </div>
-          <div class="news__tecnology__container--right">
-            <div class="new__style--prime ">
-              <div class="style__img--prime">
-                <img src="src/images/Tecno/in-missing titanic submarine.jpg" alt="">
-              </div>
-              <div class="new__title dddwdlwjan">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, esse harum maiores praesentium a vero sed reprehenderit repellendus voluptatibus, voluptate velit. Rerum nemo dolore odio ut debitis iusto illum distinctio?</h2>
-              </div>
+          <div class="news__tecnology__container--right ll2d2dw">
+            <img src="src/images/Tecnology/1366_2000.jpeg" alt="ChatGPT">
+            <div class="new__title dddwdlwjan">
+              <span class="span__date">06/07/2023</span>
+              <h2>"Es necesario para controlar una IA más inteligente que nosotros”. Los creadores de ChatGPT ya se atreven a hablar de una inteligencia artificial capaz de superar a los humanos</h2>
             </div>
+            
           </div>
         </div>
       </section>
 
-      <section class="news__anime fksej">
+      <section class="news__anime fksej" id="anime">
         <div class="news__title">
           <h2>Anime</h2>
         </div>
         <div class="news__anime--container">
           <div class="anime__container-aside">
-            <img src="src/images/img6.png" alt="">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <img src="src/images/anime/jujutsu-kaisen-season-2.png" alt="jjk-season2">
+            <h2>Fecha de estreno de Jujutsu Kaisen temporada 2 y del arco del Incidente de Shibuya</h2>
           </div>
-          <div class="second--container">
             <div class="anime__container--top">
-            <div class="new__style--four fffewd">
-              <div class="style__img--four fffewd">
-                <img src="src/images/img6.png" alt="">
+              <div class="new__style--four fffewd">
+                <div class="style__img--four fffewd">
+                  <img src="src/images/anime/yurucamp.png" alt="yurucamp">
+                </div>
+                <div class="new__title">
+                  <span class="span__date">09/07/2023</span>
+                  <h2>Yuru Camp anuncia fecha de estreno y nuevo estudio para su tercera temporada</h2>
+                </div>
               </div>
-              <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <div class="new__style--four fffewd">
+                <div class="style__img--four fffewd">
+                  <img src="src/images/anime/portada_bocchi-the-rock-26.png" alt="bocchiTheRock!">
+                </div>
+                <div class="new__title">
+                  <span class="span__date">08/07/2023</span>
+                  <h2>Fecha de estreno para el spin-off de Bocchi the Rock!.</h2>
+                </div>
               </div>
-            </div>
-             <div class="new__style--four fffewd">
-              <div class="style__img--four fffewd">
-                <img src="src/images/img6.png" alt="">
+              <div class="new__style--four fffewd">
+                <div class="style__img--four fffewd">
+                  <img src="src/images/anime/58ac03e864fc062564ecc7e33b3f73e8bc8af674v2_hq.png" alt="vagagod">
+                </div>
+                <div class="new__title">
+                  <span class="span__date">15/06/2023</span>
+                  <h2>El creador de Vagabond Takehiko Inoue quiere retorna el manga.</h2>
+                </div>
               </div>
-              <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <div class="new__style-three llocn">
+                <div class="style__img--three mmnbhg ">
+                  <img src="src/images/anime/ousama-rankign.png" alt="ousama-ranking-movie">
+                </div>
+                <div class="new__title">
+                  <span class="span__date">22/06/2023</span>
+                  <h2>Se confirmó de manera oficial que la franquicia de OUSAMA RANKING tendrá una película. .</h2>
+                </div>
               </div>
-            </div>
-             <div class="new__style--four fffewd">
-              <div class="style__img--four fffewd">
-                <img src="src/images/img6.png" alt="">
+              <div class="mmdwj">
+                <img src="src/images/anime/sucidesquadiseak.png"   alt="">
+                <div class="new__title">
+                  <span class="span__date"> 03/07/2023</span>
+                  <h2>WIT STUDIOS anuncia un nuevo ANIME ISEKAI de SUICIDE SQUAD en colaboración con WARNER BROS. JP.</h2>
+                </div>
               </div>
-              <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <div class="new__style--four fffewd dd2pryeb">
+                <img src="src/images/anime/jujutsu-kaisen-season-2.png" class="style__img--four fffewd" alt="">
+                <div class="new__title">
+                  <span class="span__date">06/07/2023</span>
+                  <h2>Fecha de estreno de Jujutsu Kaisen temporada 2 y del arco del Incidente de Shibuya</h2>
+                </div>
               </div>
-            </div>
           </div>
-          <div class="anime__container--bottom">
-            <div class="new__style-three">
-              <div class="style__img--three">
-                <img src="src/images/img6.png" alt="">
-              </div>
-              <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              </div>
-            </div>
-            <div class="new__style--seven mmdwj">
-              <div class="style__img--seven mmdwj">
-                <img src="src/images/img6.png" alt="">
-              </div>
-              <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-              </div>
-            </div>
-          </div>
-          </div>
+      
         </div>
       </section>
-      <section class="news__politica fksej">
+      <section class="news__polity fksej" id="polity">
         <div class="news__title">
           <h2>Politica</h2>
         </div>
@@ -781,50 +787,58 @@
           <div class="politica__container--top">
             <div class="new__style--seven kkkwajs">
               <div class="style__img--seven kkkwajs">
-                <img src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png" alt="">
+                <img src="src/images/polity/1688585401815.jpg" alt="CaosFrancia">
               </div>
               <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,</h2>
+                <span class="span__date">30/06/2023</span>
+                <h2>Caos en Francia: Macron suspende el transporte público, despliega fuerzas de seguridad y advierte a las redes sociales</h2>
               </div>
             </div>
             <div class="new__style--seven kkkwajs">
               <div class="style__img--seven kkkwajs">
-                <img src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png" alt="">
+                <img src="src/images/polity/berni.png" alt="berni">
               </div>
               <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,</h2>
+                <span class="span__date">27/06/2023</span>
+                <h2>Berni cargó otra vez contra Alberto Fernández: “¿Qué podía esperar Scioli? de un burro sólo se espera una patada”</h2>
               </div>
             </div>
           </div>
           <div class="politica__container--bottom">
             <div class="new__style-three">
               <div class="style__img--three">
-                <img src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png" alt="">
+                <img src="src/images/polity/744700-whatsapp-20image-202023-07-06-20at-2021-01-52.png" alt="francoRinaldi">
               </div>
               <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti, ipsa, explicabo amet dolorem cumque aliquam asperiores</h2>
+                <span class="span__date">07/07/2023</span>
+                <h2> Le piden la renuncia a Franco Rinaldi por apología de la homofobia y el machismo
+</h2>
               </div>
             </div>
             <div class="new__style-three">
               <div class="style__img--three">
-                <img src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png" alt="">
+                <img src="src/images/polity/DPOJLOY5KFF4FKGRV4YYKKPRUU.png" alt="">
               </div>
               <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti, ipsa, explicabo amet dolorem cumque aliquam asperiores</h2>
+                <span class="span__date">07/07/2023</span>
+                <h2>Con críticas al gobierno de Macri, Alberto Fernández se manifestó en contra de los créditos UVA
+</h2>
               </div>
             </div><div class="new__style-three">
               <div class="style__img--three">
-                <img src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png" alt="">
+                <img src="src/images/polity/20230212milei-1508060.png" alt="meilei">
               </div>
               <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti, ipsa, explicabo amet dolorem cumque aliquam asperiores</h2>
+                <span class="span__date">04/03/2023</span>
+                <h2>Milei contestó las críticas de Alberto Fernández: "La juventud es liberal por el fracaso de su gobierno.</h2>
               </div>
             </div><div class="new__style-three">
               <div class="style__img--three">
-                <img src="src/images/alberto-fernandez-cadena-nacional-oficialjpg.png" alt="">
+                <img src="src/images/polity/cristina-kirchner-en-el-acto-en-el-teatro-argentino-de-la-plata-1556311.png" alt="cristinakirchner">
               </div>
               <div class="new__title">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat deleniti, ipsa, explicabo amet dolorem cumque aliquam asperiores</h2>
+                <span class="span__date">09/06/2023</span>
+                <h2>Encuesta confirma la predicción y el peor temor de Cristina Kirchner.</h2>
               </div>
             </div>
           </div>
@@ -873,6 +887,6 @@
       </div>
     </footer>
 
-    <script src="src/features/main/main.js"></script>
+    <script src="src/app/main.js"></script>
   </body>
 </html>

@@ -82,6 +82,9 @@
   .new__style--four {
     width: 300px;
   }
+  .style__img--four.four222d {
+    width: 300px;
+  }
 
   .p__title {
     font-size: 1rem;
@@ -392,6 +395,218 @@
     display: block;
   }
   .mmdwj {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 872px) {
+  /* section slider */
+  .slider__content p {
+    font-size: 2.5rem;
+  }
+
+  /* 
+  section card
+  */
+  .card__container {
+    margin-top: 50px;
+  }
+  .hero__card {
+    height: auto;
+  }
+  .card__container {
+    flex-direction: column;
+  }
+  .card__template {
+    width: 500px;
+  }
+  .card__image {
+    width: 100%;
+  }
+
+  /* section deport */
+
+  .container__top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .new__style--one {
+    width: 100%;
+    max-width: none;
+    min-width: 300px;
+    min-height: 300px;
+    height: 380px;
+  }
+
+  .new__prime--title {
+    font-size: 2rem;
+  }
+
+  .new__style--two {
+    padding-top: 30px;
+    max-width: none;
+    width: 100%;
+  }
+  .style__img--two {
+    max-width: none;
+  }
+  .new__title .span__date {
+    font-size: 1rem;
+    padding-bottom: 15px;
+  }
+
+  .new__title .h2-Julian {
+    font-size: 1.3rem;
+  }
+
+  .container__bottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .new__style-three.ddfui3 {
+    width: auto;
+    height: 180px;
+    display: flex;
+  }
+  .new__style-three.ddfui3 img {
+    width: 280px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .new__style-three.ddfui3 .new__title h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  .new__style--four.ddfui3 {
+    display: flex;
+    width: auto;
+    max-width: none;
+    height: 180px;
+  }
+
+  .new__style--four.ddfui3 img {
+    width: 280px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .new__style--four.ddfui3 .new__title h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  /* section economia */
+  .news__economic--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 2%;
+  }
+  .ccww23 {
+    width: auto;
+    height: 200px;
+    display: flex;
+  }
+  .dwlajnda {
+    width: 200px;
+    height: 200px;
+  }
+  .fmiudw {
+    width: 50%;
+  }
+
+  .ooogjew {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* anime */
+
+  .news__games--container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .new__container {
+    width: 600px;
+    height: 400px;
+  }
+  .news__container--img {
+    height: 300px;
+  }
+  .news__container--side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .new__style--seven {
+    width: 600px;
+  }
+  .style__img--seven {
+    width: 600px;
+  }
+  .new__title.dwdadaddd {
+    padding-bottom: 20px;
+  }
+  .new__title.dwdadaddd h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .btn-container {
+    display: none;
+  }
+  .new__style--four.ddfui3 .new__title h2 {
+    font-size: 1.1rem;
+  }
+
+  .slider__content p {
+    font-size: 2rem;
+  }
+  .card__template {
+    width: 300px;
+  }
+
+  .news__subscribe {
+    display: none;
+  }
+
+  /* Section polity */
+
+  .politica__container--top {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .new__style--seven.kkkwajs {
+    width: 300px;
+  }
+  .style__img--seven.kkkwajs {
+    width: 300px;
+  }
+
+  /* games */
+  .news__games--container {
+    flex-direction: inherit;
+  }
+  .new__container {
+    width: 300px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .new__style--seven {
+    width: 300px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .style__img--seven {
     width: 300px;
   }
 }
