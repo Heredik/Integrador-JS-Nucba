@@ -181,9 +181,36 @@ const submitHandler = e => {
       number: inputNumber.value,
     });
     saveToLocalStorage();
-    alert('te registrate con exito!');
+    swal.fire({
+      position: 'top',
+      title: 'Bienvenido!',
+      icon: 'Success',
+    });
     window.location.href = 'login.html';
   }
+
+  swal.fire({
+    position: 'top',
+    title: 'Opss...',
+    icon: 'error',
+    text: 'Parece que te falto algo...',
+
+    /* didOpen: () => {
+      const content = Swal.getHtmlContainer();
+      const $ = content.querySelector.bind(content);
+      Swal.showLoading();
+  
+      timerInterval = setInterval(() => {
+        Swal.getHtmlContainer().querySelector('strong').textContent = (
+          Swal.getTimerLeft() / 1000
+        ).toFixed(0);
+      }, 100);
+    },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
+  }); */
+  });
 };
 
 const init = () => {

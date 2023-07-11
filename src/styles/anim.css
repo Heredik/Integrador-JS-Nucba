@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Animacion search */
 .search {
   position: relative;
@@ -39,4 +43,16 @@
 }
 .btn img {
   width: 27px;
+}
+
+/* header  */
+
+.nav__content li a:hover {
+  color: var(--color-5);
+}
+
+/* Gotop anim */
+
+.go-top-button:hover {
+  box-shadow: 4px 4px 0 0 var(--color-6);
 }

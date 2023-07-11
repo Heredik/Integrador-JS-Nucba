@@ -135,6 +135,9 @@
     width: 100vw;
     z-index: 100;
   }
+  #menu {
+    display: flex;
+  }
   .nav {
     display: flex;
     flex-direction: column;
@@ -578,6 +581,15 @@
   }
   .new__title.dwdadaddd h2 {
     font-size: 1.2rem;
+  }
+
+  /* FOoter */
+
+  .footer__container {
+    justify-content: start;
+    gap: 20px;
+    padding-bottom: 20px;
+
   }
 }
 
