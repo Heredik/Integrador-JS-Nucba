@@ -15,7 +15,6 @@ slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 /* Subscribe */
 const btnSub = document.querySelector('.subscribe__btn');
 
-
 const formFooter = document.querySelector('#form__footer');
 
 //Go Top
@@ -90,6 +89,10 @@ const init = () => {
       menuHamb.classList.remove('close');
       console.log('dwadwa');
     }
+  });
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
   });
 };
 
